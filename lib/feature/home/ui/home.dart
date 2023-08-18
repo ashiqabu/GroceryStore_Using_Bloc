@@ -53,7 +53,7 @@ class _HomeState extends State<Home> {
             final successState = state as HomeLoadedSuccessState;
             return Scaffold(
               appBar: AppBar(
-                title: const Text('Grocery App'),
+                title: const Text('Addidas Store'),
                 backgroundColor: Colors.teal,
                 actions: [
                   IconButton(

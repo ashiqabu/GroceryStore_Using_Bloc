@@ -1,36 +1,36 @@
-class GroceryData{
-
-
- static List<Map<String, dynamic>> groceryProducts = [
-  {
-    'id': '1',
-    'name': 'Bananas',
-    'description': 'Fresh bananas from Ecuador',
-    'price': 0.49,
-    'imageUrl': 'https://cdn.shopify.com/s/files/1/0258/4307/3103/products/asset_2_800x.jpg?v=1571839043',
-  },
-  {
-    'id': '2',
-    'name': 'Grapes',
-    'description': 'Organic, locally grown apples',
-    'price': 1.99,
-    'imageUrl': 'https://www.jiomart.com/images/product/original/590000452/sharad-seedless-grapes-1-kg-product-images-o590000452-p590116963-0-202203171004.jpg',
-  },
-  {
-    'id': '3',
-    'name': 'Bread',
-    'description': 'Brown Bread, Tasty',
-    'price': 2.49,
-    'imageUrl': 'https://thumbs.dreamstime.com/b/bread-cut-14027607.jpg',
-  },
-  {
-    'id': '4',
-    'name': 'Brown Eggs',
-    'description': 'Farm-fresh brown eggs',
-    'price': 3.99,
-    'imageUrl': 'https://cdn.britannica.com/94/151894-050-F72A5317/Brown-eggs.jpg',
-  },
- 
-];
-
+class GroceryData {
+  static List<Map<String, dynamic>> groceryProducts = [
+    {
+      'id': '1',
+      'name': 'Adidas Shoes',
+      'description': 'Get Latest Price from the seller',
+      'price': 0.49,
+      'imageUrl':
+          'https://5.imimg.com/data5/ANDROID/Default/2021/6/UH/ZG/GC/120280019/img-20210624-wa0351-jpg.jpg',
+    },
+    {
+      'id': '2',
+      'name': 'Addidas Chappels',
+      'description': 'Get Latest Price from the seller',
+      'price': 1.99,
+      'imageUrl':
+          'https://www.pngitem.com/pimgs/m/323-3237438_adidas-adidas-men-s-shoes-women-s-shoes.png',
+    },
+    {
+      'id': '3',
+      'name': 'Addidas Boots',
+      'description': 'Get Latest Price from the seller',
+      'price': 2.49,
+      'imageUrl':
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS1i2UbefObZ3crfZDkbpEqyEjM9Xvx3zUJQ&usqp=CAU'
+    },
+    {
+      'id': '4',
+      'name': 'Addidas Shoes',
+      'description': 'Get Latest Price from the seller',
+      'price': 3.99,
+      'imageUrl':
+          'https://www.transparentpng.com/thumb/adidas-shoes/MQFKhq-youth-adidas-mat-wizard-wrestling-shoes-free-shipping-march.png',
+    },
+  ];
 }

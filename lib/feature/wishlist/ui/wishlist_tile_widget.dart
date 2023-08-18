@@ -82,8 +82,43 @@ class WishListTileWidget extends StatelessWidget {
                       )),
                   ElevatedButton(
                     onPressed: () {
-                      wishlistBloc.add(WishListRemoveFromWishListEvent(
-                          productDataModel: productDataModel));
+                      showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            title: const Text("Delete Confirmation"),
+                            content: const Text(
+                                "Are you sure you want to delete this item?"),
+                            actions: [
+                              TextButton(
+                                onPressed: () {
+                                  wishlistBloc.add(
+                                      WishListRemoveFromWishListEvent(
+                                          productDataModel: productDataModel));
+                                  Navigator.of(context)
+                                      .pop(); // Close the dialog
+                                },
+                                child: const Text("Cancel"),
+                              ),
+                              TextButton(
+                                onPressed: () {
+                                  wishlistBloc.add(
+                                      WishListRemoveFromWishListEvent(
+                                          productDataModel: productDataModel));
+                                  Navigator.of(context)
+                                      .pop(); // Close the dialog
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    const SnackBar(
+                                      content: Text("Item deleted"),
+                                    ),
+                                  );
+                                },
+                                child: const Text("Delete"),
+                              ),
+                            ],
+                          );
+                        },
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.teal,
